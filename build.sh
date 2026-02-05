@@ -31,7 +31,7 @@ ARCH=arm64 \
 O=out
 "
 
-make ${MAKE_ARGS} -j16 beyond1lte_defconfig gorhanhee.config || exit 1
+make ${MAKE_ARGS} -j16 beyond0lte_defconfig gorhanhee.config || exit 1
 make ${MAKE_ARGS} -j16 || exit 1
 
 # # make flashable file
@@ -44,4 +44,4 @@ export LOCATION=$(pwd)
 cp ${LOCATION}/out/arch/arm64/boot/Image ${LOCATION}/gorhanhee/AnyKernel3/Image
 
 cd gorhanhee/AnyKernel3
-zip -r beyond1lte_kernelsu.zip . -x "beyond1te_kernelsu.zip" 
+zip -r beyond0lte_kernelsu.zip . -x "beyond0te_kernelsu.zip" 
