@@ -1,4 +1,4 @@
-name: KernelSU Build (beyond1)
+name: KernelSU Build (beyond0)
 
 on:
   workflow_dispatch:
@@ -33,6 +33,6 @@ jobs:
     - name: 6. Upload Artifacts Kernel File
       uses: actions/upload-artifact@v4
       with:
-        name: "beyond1_kernelsu"
+        name: "beyond0_kernelsu"
         path: |
-          ./gorhanhee/AnyKernel3/beyond1lte_kernelsu.zip
+          ./gorhanhee/AnyKernel3/beyond0lte_kernelsu.zip
